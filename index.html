@@ -1,1 +1,98 @@
-This is test page.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ICPP 2027</title>
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.35),
+          rgba(0, 0, 0, 0.35)
+        ),
+        url("assets/sapporo.jpg") center center / cover no-repeat;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 1000px;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      width: min(600px, 80vw);
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin: 0 0 20px 0;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 600;
+    }
+
+    .conference-name {
+      margin: 0 0 24px 0;
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      line-height: 1.5;
+    }
+
+    .date-location {
+      margin: 0;
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      line-height: 1.6;
+    }
+
+    .coming-soon {
+      margin-top: 35px;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="content">
+
+    <img
+      src="assets/icpp_log.svg"
+      alt="ICPP 2027 logo"
+      class="logo"
+    >
+
+    <h1>ICPP 2027</h1>
+
+    <p class="conference-name">
+      The 56th International Conference on Parallel Processing
+    </p>
+
+    <p class="date-location">
+      Sapporo, Japan<br>
+      August XX–XX, 2027
+    </p>
+
+    <p class="coming-soon">
+      More details, including Call for Papers, coming soon!
+    </p>
+
+  </main>
+
+</body>
+</html>
